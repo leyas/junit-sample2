@@ -1,3 +1,5 @@
+package pl.szymonleyk.junit;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -18,7 +20,7 @@ public class CalculatorTest {
 	
 	@Test
 	void addTest3() {
-		assertNotEquals(5, Calculator.add(55,2);
+		assertNotEquals(5, Calculator.add(55,2));
 	}
 	
 	@Test
@@ -33,7 +35,7 @@ public class CalculatorTest {
 	
 	@Test
 	void divideTest() {
-		assertEquals(1, Calculator.divide(2,2));
+		assertEquals(1.0, Calculator.divide(2,2));
 	}
 	
 	@Test
