@@ -30,4 +30,9 @@ public class Calculator {
 		return result;
 	}
 
+	public static double rand() {
+		return Math.random();
+	}
+
+
 }

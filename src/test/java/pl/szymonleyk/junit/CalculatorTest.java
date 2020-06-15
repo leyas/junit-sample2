@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
@@ -71,5 +72,10 @@ public class CalculatorTest {
 	@DisplayName("5 * 5 = 25")
 	void multipleTest() {
 		assertEquals(25, Calculator.multiple(5, 5));
+	}
+	
+	@RepeatedTest(100)
+	void randTest() {
+		assertTrue(Calculator.rand() > 0);
 	}
 }
